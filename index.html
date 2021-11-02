@@ -6,6 +6,41 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <h1>Gästbok</h1>
+    <form method="post" name="guestbook" onsubmit="return submitform()">
+        <div>
+            <label for="namn">Namn:
+                <br>
+                <input type="text" name="namn" id="namn" placeholder="ange ditt namn" required>
+                </label>
+        </div>
+        <br>
+        <div>
+            <label for="epost">Epost:
+                <br>
+                <input type="email" name="epost" id="epost" placeholder="ange din epostadress" required>
+            </label>
+        </div>
+        <br>
+        <div>
+            <label for="telefon">Telefonnummer:
+                <br>
+                <input type="tel" name="telefon" id="telefon" placeholder="ange ditt telefonnummer">
+            </label>
+        </div>
+        <br>
+        <div>
+            <label for="Meddelande">Meddelande:
+                <br>
+                <textarea namn="meddelande" id="meddelande"></textarea>
+            </label>
+        </div>
+        <div>
+            <input type="checkbox" value="gdpr" required> Jag godkänner att mina uppgifter sparas.
+        </div>
+        <input type="submit" value="Skicka">
+        </form>
+        <h2>Inlägg</h2>
+        <p id="message"></p>
 </body>
 </html>
