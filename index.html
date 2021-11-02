@@ -7,7 +7,7 @@
 </head>
 <body>
     <h1>Gästbok</h1>
-    <form method="post" name="guestbook" onsubmit="return submitform()">
+    <form method="post" name="guestbook" onsubmit="return submitForm()">
         <div>
             <label for="namn">Namn:
                 <br>
@@ -36,11 +36,14 @@
             </label>
         </div>
         <div>
-            <input type="checkbox" value="gdpr" required> Jag godkänner att mina uppgifter sparas.
+            <input type="checkbox" id="gdpr" value="gdpr" required> Jag godkänner att mina uppgifter sparas.
         </div>
         <input type="submit" value="Skicka">
         </form>
         <h2>Inlägg</h2>
-        <p id="message"></p>
+        <p id="message">
+
+        </p>
+        <script src="script.js"></script>
 </body>
 </html>
